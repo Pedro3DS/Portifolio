@@ -1,0 +1,301 @@
+html {
+    background: #0d1b2a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background-color: transparent;
+}
+
+
+ div#topEfect {
+    height: 300px;
+    width: 300px;
+    clip-path: polygon(0 0, 100% 0, 80% 5%, 5% 5%, 5% 80%, 0 100%);
+    background: radial-gradient(circle, rgba(253,240,213,1) 0%, rgba(193,18,31,1) 50%, rgba(120,0,0,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+ div#bottomEfect {
+    height: 300px;
+    width: 300px;
+    clip-path: polygon(20% 95%, 95% 95%, 95% 20%, 100% 0, 100% 100%, 0 100%);
+    background: radial-gradient(circle, rgba(253,240,213,1) 0%, rgba(102,155,188,1) 50%, rgba(0,48,73,1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#cursor-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #45B0DF;
+    border-radius: 50%;
+    filter: blur(30px);
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.2s linear;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+ section.developer-information {
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ section.developer-information div#welcome{
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+}
+
+ section.developer-information div#welcome h1{
+    color: #fdf0d5;
+    font-size: 70px;
+    padding: 0;
+    margin-left: 90px;
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+}
+
+
+ section.developer-information div#informations {
+    width: auto;
+    padding-top: 30px;
+    margin-right: 60px;
+}
+
+ section.developer-information div#informations p{
+    color: #fdf0d5;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    margin-left: 90px;
+    margin-top: 20px;
+    border-left: solid 2px #c1121f;
+    padding-left: 10px;
+}
+
+ section.developer-information div#informationsFooter {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+section.developer-information div#informationsFooter ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100%;
+    margin-right: 100%;
+    width: auto;
+}
+
+section.developer-information div#informationsFooter ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.developer-information div#informationsFooter ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 30px;
+    fill: #fdf0d5;
+    z-index: 1;
+    margin-left: 25px;
+    margin-right: 25px;
+    transition: all 0.2s ease-in;
+}
+
+ section.developer-information div#informationsFooter ul li a:hover{
+    padding-bottom: 20px;
+    filter: drop-shadow(rgba(100, 100, 111, 0.2) 0px 7px 29px 0px);
+}
+
+ section.developer-information div#informationsFooter ul li:nth-child(1) a:hover{
+    fill: red;
+}
+
+ section.developer-information div#informationsFooter ul li:nth-child(2) a:hover{
+    fill: white;
+}
+
+ section.developer-information div#informationsFooter ul li:nth-child(3) a:hover{
+    fill: blue;
+}
+
+ section.developer-projects {
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    display: block;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    background: url("/imgs/polygon-scatter-haikei.svg") no-repeat;
+    background-size: cover;
+} 
+::-webkit-scrollbar{
+    display: none;
+}
+
+ section.developer-projects div#projectsMain{
+    margin: 0;
+    padding: 0;
+    margin-top: 80px;
+}
+
+ section.developer-projects div#projectsMain div#knowledge {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+section.developer-projects div#projectsMain div#knowledge h2{
+    color: #fdf0d5;
+    margin-left: 10%;
+}
+
+ section.developer-projects div#projectsMain div#knowledge ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	grid-template-columns: 150px 150px 150px 150px;
+}
+
+ section.developer-projects div#projectsMain div#knowledge svg{
+    height: 50px;
+    width: auto;
+    fill: #fdf0d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ section.developer-projects div#projectsMain div#knowledge ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+
+ section.developer-projects div#projectsMain div#projects {
+    display: block;
+    color: #fdf0d5;
+}
+
+section.developer-projects div#projectsMain div#projects h2{
+    margin-left: 10%;
+}
+
+section.developer-projects div#projectsMain div#projects div#projectsItens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+ section.developer-projects div#projectsMain div#projects ul{
+    list-style-type: none;
+    
+}
+
+section.developer-projects div#projectsMain div#projects ul li img{
+    height: 100px;
+    
+}
+
+section.developer-projects div#projectsMain div#projects ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+    background-color: transparent;
+}
+
+section.developer-projects div#projectsMain div#projects ul li div#projectInfo{
+    margin-left: 10px;
+}
+
+section.developer-projects div#projectsMain div#projects ul li div#projectInfo span{
+    background-color: #45B0DF;
+    color: #fdf0d5;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}

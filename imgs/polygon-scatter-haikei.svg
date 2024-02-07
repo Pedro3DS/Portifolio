@@ -1,0 +1,30 @@
+<svg id="visual" viewBox="0 0 540 960" width="540" height="960" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<rect width="540" height="960" fill="transparent">
+</rect>
+<g>
+<g transform="translate(520 74)">
+<path d="M0 -144L101.8 -101.8L144 0L101.8 101.8L0 144L-101.8 101.8L-144 0L-101.8 -101.8Z" fill="none" stroke="#297EA6" opacity="10%" stroke-width="2">
+</path>
+</g>
+<g transform="translate(483 594)">
+<path d="M0 -113L79.9 -79.9L113 0L79.9 79.9L0 113L-79.9 79.9L-113 0L-79.9 -79.9Z" fill="none" stroke="#297EA6" opacity="10%" stroke-width="2">
+</path>
+</g>
+<g transform="translate(140 134)">
+<path d="M0 -64L45.3 -45.3L64 0L45.3 45.3L0 64L-45.3 45.3L-64 0L-45.3 -45.3Z" fill="none" stroke="#297EA6" opacity="10%" stroke-width="2">
+</path>
+</g>
+<g transform="translate(172 658)">
+<path d="M0 -100L70.7 -70.7L100 0L70.7 70.7L0 100L-70.7 70.7L-100 0L-70.7 -70.7Z" stroke="#297EA6" opacity="10%" fill="none" stroke-width="2">
+</path>
+</g>
+<g transform="translate(486 901)">
+<path d="M0 -90L63.6 -63.6L90 0L63.6 63.6L0 90L-63.6 63.6L-90 0L-63.6 -63.6Z" stroke="#297EA6" opacity="10%" fill="none" stroke-width="2">
+</path>
+</g>
+<g transform="translate(183 950)">
+<path d="M0 -137L96.9 -96.9L137 0L96.9 96.9L0 137L-96.9 96.9L-137 0L-96.9 -96.9Z" stroke="#297EA6" opacity="10%" fill="none" stroke-width="2">
+</path>
+</g>
+</g>
+</svg>

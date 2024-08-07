@@ -6,12 +6,12 @@
   padding: 0;
 }
 
-.Header {
+.Container1 {
   background-color: black;
   height: 100vh;
   
 }
-.Header .Nav {
+.Container1 .Header {
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -20,11 +20,11 @@
   padding: 0;
   padding: 30px;
 }
-.Header .Nav .Name {
+.Container1 .Header .Name {
   color: red;
   width: 10%;
 }
-.Header .Nav .Links {
+.Container1 .Header .Links {
   color: white;
   display: flex;
   justify-content: space-between;
@@ -32,50 +32,73 @@
   width: 50%;
   
 }
-.Header .Nav .Links p {
+.Container1 .Header .Links p {
   transition: ease 0.5s all;
 }
-.Header .Nav .Links:hover p {
+.Container1 .Header .Links:hover p {
   filter: blur(1px);
 }
-.Header .Nav .Links p:hover {
+.Container1 .Header .Links p:hover {
   
   border-bottom: white 1px solid;
   filter: blur(0px);
 }
 
+.Container1 .Contant {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.Container1 .Contant .Infos h1{
+  font-weight: lighter;
+}
+.Container1 .Contant .Infos h1 span{
+  font-weight: bold;
+}
+.Container1 .Contant .Infos p{
+  color: rgba(255, 255, 255, 0.541);
+}
+.Container1 .Contant .ProfilePicture {
+  height: 20vh;
+  width: 20vh;
+  object-fit: cover;
+}
+
 @media (max-width:800px) {
-  .Header .Nav {
+  .Container1 .Header {
     display: block;
   }
-  .Header .Nav .Name {
+  .Container1 .Header .Name {
 
     width: 100%;
     margin-bottom: 10px;
   }
-  .Header .Nav .Links {
+  .Container1 .Header .Links {
     width: auto;
   }
 }
 @media (max-width:790px) {
-  .Header .Nav .Links {
+  .Container1 .Header .Links {
     display: block;
   }
-  .Header .Nav .Links p {
+  .Container1 .Header .Links p {
     margin-top: 10px;
     margin-bottom: 10px;
   }
 }
 @media (max-width:800px) {
-  .Header .Nav {
+  .Container1 .Header {
     display: block;
   }
-  .Header .Nav .Name {
+  .Container1 .Header .Name {
 
     width: 100%;
     margin-bottom: 10px;
   }
-  .Header .Nav .Links {
+  .Container1 .Header .Links {
     width: 100%;
   }
 }

@@ -1,4 +1,5 @@
 import './css/App.css';
+import './'
 import {React} from "react";
 import Picture from "./blank-profile-picture-973460_1280.webp";
 

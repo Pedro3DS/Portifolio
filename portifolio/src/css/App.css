@@ -44,7 +44,7 @@
   filter: blur(0px);
 }
 
-.Container1 .Contant {
+.Container1 .Content {
   display: flex;
   color: white;
   justify-content: space-between;
@@ -52,16 +52,16 @@
   padding-left: 40px;
   padding-right: 40px;
 }
-.Container1 .Contant .Infos h1{
+.Container1 .Content .Infos h1{
   font-weight: lighter;
 }
-.Container1 .Contant .Infos h1 span{
+.Container1 .Content .Infos h1 span{
   font-weight: bold;
 }
-.Container1 .Contant .Infos p{
+.Container1 .Content .Infos p{
   color: rgba(255, 255, 255, 0.541);
 }
-.Container1 .Contant .ProfilePicture {
+.Container1 .Content .ProfilePicture {
   height: 20vh;
   width: 20vh;
   object-fit: cover;

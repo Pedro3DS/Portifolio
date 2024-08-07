@@ -1,0 +1,69 @@
+ .Header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding: 30px;
+  }
+   .Header .Name {
+    color: red;
+    width: 10%;
+  }
+   .Header .Links {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    
+  }
+   .Header .Links p {
+    transition: ease 0.5s all;
+  }
+   .Header .Links:hover p {
+    filter: blur(1px);
+  }
+   .Header .Links p:hover {
+    
+    border-bottom: white 1px solid;
+    filter: blur(0px);
+  }
+  
+  
+  @media (max-width:800px) {
+     .Header {
+      display: block;
+    }
+     .Header .Name {
+  
+      width: 100%;
+      margin-bottom: 10px;
+    }
+     .Header .Links {
+      width: auto;
+    }
+  }
+  @media (max-width:790px) {
+     .Header .Links {
+      display: block;
+    }
+     .Header .Links p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  @media (max-width:800px) {
+     .Header {
+      display: block;
+    }
+     .Header .Name {
+  
+      width: 100%;
+      margin-bottom: 10px;
+    }
+     .Header .Links {
+      width: 100%;
+    }
+  }

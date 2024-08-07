@@ -1,23 +1,15 @@
 import './css/App.css';
 import {React} from "react";
 import Picture from "./blank-profile-picture-973460_1280.webp";
+import Header from './components/Header/Header';
+import { FaGithub } from "react-icons/fa";
 
 function App() {
   return (
     <div className="Container">
+      <Header/>
       <div className="Container1">
-        <div className="Header">
-          <div className="Name">
-            <h1>Pedro Diniz</h1>
-          </div>
-          <div className="Links">
-            <p>Sobre mim</p>
-            <p>Técnologias</p>
-            <p>Projetos</p>
-            <p>Jogos</p>
-          </div>
-        </div>  
-        <div className="Contant">
+        <div className="Content">
           <div className="Infos">
 
             <h1>👋Olá, eu sou <span>Pedro Diniz Santana</span></h1>
@@ -25,6 +17,7 @@ function App() {
           </div>
           <div className="Picture" >
             <img src={Picture} alt='qwer' className='ProfilePicture'/>
+            <FaGithub/>
           </div>
         </div>
       </div>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  font-family: "JetBrains Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  background-color: black;
+  height: 100vh;
+  
+}
+.Header .Nav {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding: 30px;
+}
+.Header .Nav .Name {
+  color: red;
+  width: 10%;
+}
+.Header .Nav .Links {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  
+}
+.Header .Nav .Links p {
+  transition: ease 0.5s all;
+}
+.Header .Nav .Links:hover p {
+  filter: blur(1px);
+}
+.Header .Nav .Links p:hover {
+  
+  border-bottom: white 1px solid;
+  filter: blur(0px);
+}
+
+@media (max-width:800px) {
+  .Header .Nav {
+    display: block;
+  }
+  .Header .Nav .Name {
+
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .Header .Nav .Links {
+    width: auto;
+  }
+}
+@media (max-width:790px) {
+  .Header .Nav .Links {
+    display: block;
+  }
+  .Header .Nav .Links p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width:800px) {
+  .Header .Nav {
+    display: block;
+  }
+  .Header .Nav .Name {
+
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .Header .Nav .Links {
+    width: 100%;
+  }
+}
+
+.About {
+  background-color: bisque;
+  height: 50vh;
+}

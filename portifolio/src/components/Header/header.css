@@ -6,6 +6,10 @@
     margin: 0;
     padding: 0;
     padding: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
   }
    .Header .Name {
     color: red;
@@ -32,6 +36,12 @@
   }
   
   
+  @media (max-width:810px) {
+     .Header {
+      position: relative;
+    }
+
+  }
   @media (max-width:800px) {
      .Header {
       display: block;

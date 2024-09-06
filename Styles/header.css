@@ -1,0 +1,18 @@
+/* Header */
+
+.HeaderLinks {
+    background-color: black;
+    height: 15vh;
+}
+
+.HeaderName {
+    color: #FF0000;
+}
+
+.HeaderLinks a{
+    
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 15px;
+    
+}

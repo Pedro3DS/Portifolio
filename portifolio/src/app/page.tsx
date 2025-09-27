@@ -19,11 +19,11 @@ export default function Home() {
           isRotate={false}
           mouseInteraction={false}
           pixelFilter={700}
-          color1="green"
+          color1={"#fc03b5ff"}
         />
       </div>
       <div className="relative z-1 font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen ">
-        <header className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        {/* <header className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
 
           <PillNav
             logo="none"
@@ -41,7 +41,7 @@ export default function Home() {
             pillColor="#ffffff"
             hoveredPillTextColor="#ffffff"
             pillTextColor="#000000"
-          /></header>
+          /></header> */}
         <main ></main>
         {/* <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
           <SplitText

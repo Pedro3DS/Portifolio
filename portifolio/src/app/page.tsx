@@ -3,101 +3,184 @@
 import Image from "next/image";
 import SplitText from "@/components/SplitText";
 import Balatro from "@/components/Balatro";
-import LoadingScreen from "@/components/LoadingScreen";
-import ElectricBorder from "@/blocks/Animations/ElectricBorder/ElectricBorder";
-import StarBorder from "@/blocks/Animations/StarBorder/StarBorder";
-import PillNav from "@/blocks/Components/PillNav/PillNav";
+
+import BlobImage from "@/components/BlobImage";
+import GradualBlur from "@/blocks/Animations/GradualBlur/GradualBlur";
+import MagicBento from "@/blocks/Components/MagicBento/MagicBento";
+import Cubes from "@/blocks/Animations/Cubes/Cubes";
+import AnimatedContent from "@/blocks/Animations/AnimatedContent/AnimatedContent";
+
 
 export default function Home() {
 
   return (
-    <div >
-      {/* Loading overlay */}
-      {/* <LoadingScreen/> */}
+    <div className="relative bg-[#0f0020] text-white min-h-screen overflow-x-hidden">
+
+      {/* Balatro Background */}
       <div className="h-[100vh] w-[100%] fixed top-0 right-0 z-0">
         <Balatro
           isRotate={false}
           mouseInteraction={false}
           pixelFilter={700}
-          color1={"#fc03b5ff"}
+          color1="#000000ff"
         />
       </div>
-      <div className="relative z-1 font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen ">
-        {/* <header className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
 
-          <PillNav
-            logo="none"
-            logoAlt="Company Logo"
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'About', href: '/about' },
-              { label: 'Services', href: '/services' },
-              { label: 'Contact', href: '/contact' }
-            ]}
-            activeHref="/"
-            className="custom-nav"
-            ease="power2.easeOut"
-            baseColor="#000000"
-            pillColor="#ffffff"
-            hoveredPillTextColor="#ffffff"
-            pillTextColor="#000000"
-          /></header> */}
-        <main ></main>
-        {/* <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-          <SplitText
-            text="Hello, GSAP!"
-            tag="h1"
-          />
-          <Image
-            className="dark:invert"
-            src="/next.svg"
-            alt="Next.js logo"
-            width={180}
-            height={38}
-            priority
-          />
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 w-full flex justify-center gap-12 py-6 z-10 text-gray-200 font-semibold backdrop-blur-sm bg-black/20 z-20">
+        <a href="#home" className="hover:text-indigo-400 transition">Home</a>
+        <a href="#about" className="hover:text-indigo-400 transition">About Me</a>
+        <a href="#works" className="hover:text-indigo-400 transition">Works</a>
+        <a href="#contact" className="hover:text-indigo-400 transition">Contact</a>
+      </nav>
 
-          <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-            <li className="mb-2 tracking-[-.01em]">
-              Get started by editing{" "}
-              <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-                src/app/page.tsx
-              </code>
-              .
-            </li>
-            <li className="tracking-[-.01em]">
-              Save and see your changes instantly.
-            </li>
-          </ol>
+      {/* Hero Section */}
+      <section id="home" className="relative h-screen flex items-center justify-center px-6 z-10">
+        <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl w-full">
 
-          <div className="flex gap-4 items-center flex-col sm:flex-row">
-            <a
-              className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className="dark:invert"
-                src="/vercel.svg"
-                alt="Vercel logomark"
-                width={20}
-                height={20}
-              />
-              Deploy now
-            </a>
-            <a
-              className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Read our docs
-            </a>
+          <AnimatedContent
+            distance={150}
+            direction="vertical"
+            reverse={false}
+            duration={1}
+            ease="bounce.out"
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+            delay={0}
+          >
+
+            {/* Texto */}
+            <div className="flex-1 backdrop-blur-xs bg-black/50 rounded-2xl shadow-2xl p-6 md:p-12">
+              <h1 className="text-5xl font-bold mb-6">
+                <SplitText
+                  text="Hey, I'm Pedro 👋"
+                  className="text-5xl font-semibold"
+                  splitType="chars"
+                  delay={100}
+                  duration={0.6}
+                  from={{ opacity: 0, y: 40 }}
+                  to={{ opacity: 1, y: 0 }}
+                  textAlign="left"
+                />
+              </h1>
+              <p className="text-lg mb-6 leading-relaxed text-gray-200">
+                Crafting <span className="font-semibold text-pink-400">worlds through games 🎮</span>
+                and building the <span className="font-semibold text-green-400">web of tomorrow 👨‍💻</span>
+              </p>
+              <div className="flex gap-4">
+                <a href="#" className="hover:underline">Insta</a>
+                <a href="#" className="hover:underline">GitHub</a>
+                <a href="#" className="hover:underline">LinkedIn</a>
+              </div>
+            </div>
+          </AnimatedContent>
+
+          <AnimatedContent
+            distance={150}
+            direction="vertical"
+            reverse={false}
+            duration={1}
+            ease="bounce.out"
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+            delay={0}
+          >
+            {/* Imagem */}
+            <div className="flex-1 flex justify-center">
+              <div className="w-68 h-68 relative">
+                <BlobImage />
+              </div>
+            </div>
+
+          </AnimatedContent>
+
+        </div>
+      </section>
+
+
+      {/* About Section */}
+      <section id="about" className="relative py-32 px-6 bg-[#0a0018] z-10">
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+
+          {/* Texto */}
+          <div className="flex-1 bg-black/50 backdrop-blur-md rounded-2xl shadow-2xl p-8">
+            <h2 className="text-4xl font-bold mb-4 text-indigo-400">About Me</h2>
+            <p className="text-gray-200 leading-relaxed mb-4">
+              I'm Pedro Diniz Santana, a versatile <span className="font-semibold">Full Stack Web Developer</span>
+              and <span className="font-semibold">Multiplatform Game Developer</span>.
+              I have been studying programming for nearly 4 years and developing games for the last 2 years.
+            </p>
+            <p className="text-gray-200 leading-relaxed">
+              I create robust web systems and immersive game experiences, always aiming for high performance and polished results. My focus on innovation and technical quality ensures consistent delivery of projects in both digital and gaming environments.
+            </p>
           </div>
-        </main> */}
 
-      </div>
+          {/* Imagem */}
+          <div className="flex-1 flex justify-center align-center">
+            <div className="w-64 h-64 relative">
+              {/* <Cubes
+                gridSize={6}
+                maxAngle={35}
+                radius={4}
+                borderStyle="2px dashed #006bb4ff"
+                // borderStyle="2px dashed #040014ff"
+                faceColor="#040014ff"
+                rippleColor="#abababff"
+                rippleSpeed={1.5}
+                autoAnimate={true}
+                rippleOnClick={true}
+              /> */}
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* Certificates Section */}
+      <section id="certificates" className="relative py-32 px-6 z-10">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold mb-8 text-indigo-400">Certificates & Education</h2>
+          <ul className="space-y-4 text-gray-200">
+            <li>
+              <span className="font-semibold">Technical Course in Systems Development</span> – Senac Hub Academy, Campo Grande MS (2023–2024)
+            </li>
+            <li>
+              <span className="font-semibold">Technical Course in Digital Game Programming</span> – Senac Hub Academy, Campo Grande MS (2024–2025)
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Works / Projects Section */}
+      <section id="works" className="relative py-32 px-6 bg-[#0a0018] z-10">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold mb-8 text-indigo-400">Works & Projects</h2>
+          <p className="text-gray-200 leading-relaxed">
+            I have experience creating games in Unity and developing integrated web platforms. My projects range from interactive games to full-featured web applications, combining creativity with technical precision.
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="relative py-32 px-6 z-10">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold mb-8 text-indigo-400">Contact</h2>
+          <p className="text-gray-200 leading-relaxed mb-4">
+            Interested in collaborating or seeing more of my work? Reach out via social media or email:
+          </p>
+          <ul className="text-gray-200 space-y-2">
+            <li>Email: <span className="font-semibold">pedro@example.com</span></li>
+            <li>GitHub: <a href="#" className="hover:underline">github.com/pedro</a></li>
+            <li>LinkedIn: <a href="#" className="hover:underline">linkedin.com/in/pedro</a></li>
+          </ul>
+        </div>
+      </section>
+
     </div>
   );
 }

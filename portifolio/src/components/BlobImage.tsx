@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function BlobImage() {
     return (
         <motion.div
-            className="relative w-72 h-72 overflow-hidden"
+            className="relative w-50 h-50 md:w-72 md:h-72 overflow-hidden"
             animate={{
                 borderRadius: [
                     "60% 40% 60% 40% / 50% 60% 40% 50%",

@@ -38,65 +38,39 @@ export default function Home() {
       <section id="home" className="relative h-screen flex items-center justify-center px-6 z-10">
         <div className="flex flex-col md:flex-row items-center gap-12 max-w-5xl w-full">
 
-          <AnimatedContent
-            distance={150}
-            direction="vertical"
-            reverse={false}
-            duration={1}
-            ease="bounce.out"
-            initialOpacity={0.2}
-            animateOpacity
-            scale={1.1}
-            threshold={0.2}
-            delay={0}
-          >
-
-            {/* Texto */}
-            <div className="flex-1 backdrop-blur-xs bg-black/50 rounded-2xl shadow-2xl p-6 md:p-12">
-              <h1 className="text-5xl font-bold mb-6">
-                <SplitText
-                  text="Hey, I'm Pedro 👋"
-                  className="text-5xl font-semibold"
-                  splitType="chars"
-                  delay={100}
-                  duration={0.6}
-                  from={{ opacity: 0, y: 40 }}
-                  to={{ opacity: 1, y: 0 }}
-                  textAlign="left"
-                />
-              </h1>
-              <p className="text-lg mb-6 leading-relaxed text-gray-200">
-                Crafting <span className="font-semibold text-pink-400">worlds through games 🎮</span>
-                and building the <span className="font-semibold text-green-400">web of tomorrow 👨‍💻</span>
-              </p>
-              <div className="flex gap-4">
-                <a href="#" className="hover:underline">Insta</a>
-                <a href="#" className="hover:underline">GitHub</a>
-                <a href="#" className="hover:underline">LinkedIn</a>
-              </div>
+          {/* Texto */}
+          <div className="flex-1 backdrop-blur-xs bg-black/50 rounded-2xl shadow-2xl p-6 md:p-12 order-1 md:order-0">
+            <h1 className="text-5xl font-bold mb-6">
+              <SplitText
+                text="Hey, I'm Pedro 👋"
+                className="text-5xl font-semibold"
+                splitType="chars"
+                delay={100}
+                duration={0.6}
+                from={{ opacity: 0, y: 40 }}
+                to={{ opacity: 1, y: 0 }}
+                textAlign="left"
+              />
+            </h1>
+            <p className="text-lg mb-6 leading-relaxed text-gray-200">
+              Crafting <span className="font-semibold text-pink-400">worlds through games 🎮</span><br/>
+              and building the <span className="font-semibold text-green-400">web of tomorrow 👨‍💻</span>
+            </p>
+            <div className="flex gap-4">
+              <a href="#" className="hover:underline">Insta</a>
+              <a href="#" className="hover:underline">GitHub</a>
+              <a href="#" className="hover:underline">LinkedIn</a>
             </div>
-          </AnimatedContent>
+          </div>
 
-          <AnimatedContent
-            distance={150}
-            direction="vertical"
-            reverse={false}
-            duration={1}
-            ease="bounce.out"
-            initialOpacity={0.2}
-            animateOpacity
-            scale={1.1}
-            threshold={0.2}
-            delay={0}
-          >
-            {/* Imagem */}
-            <div className="flex-1 flex justify-center">
-              <div className="w-68 h-68 relative">
-                <BlobImage />
-              </div>
+
+
+          {/* Imagem */}
+          <div className="flex-1 flex justify-center order-0 md:order-1">
+            <div className="w-50 h-50 relative md:w-72 md:h-72">
+              <BlobImage />
             </div>
-
-          </AnimatedContent>
+          </div>
 
         </div>
       </section>
@@ -117,24 +91,6 @@ export default function Home() {
             <p className="text-gray-200 leading-relaxed">
               I create robust web systems and immersive game experiences, always aiming for high performance and polished results. My focus on innovation and technical quality ensures consistent delivery of projects in both digital and gaming environments.
             </p>
-          </div>
-
-          {/* Imagem */}
-          <div className="flex-1 flex justify-center align-center">
-            <div className="w-64 h-64 relative">
-              {/* <Cubes
-                gridSize={6}
-                maxAngle={35}
-                radius={4}
-                borderStyle="2px dashed #006bb4ff"
-                // borderStyle="2px dashed #040014ff"
-                faceColor="#040014ff"
-                rippleColor="#abababff"
-                rippleSpeed={1.5}
-                autoAnimate={true}
-                rippleOnClick={true}
-              /> */}
-            </div>
           </div>
 
         </div>
